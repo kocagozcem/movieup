@@ -1,0 +1,63 @@
+.container {
+  position: relative;
+  display: flex;
+  align-self: stretch;
+  overflow: hidden;
+  justify-content: center;
+  .content {
+    display: flex;
+    width: 150%;
+  }
+
+  .arrow {
+    position: absolute;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    z-index: 10;
+
+    .arrowButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: gold;
+      margin: 2rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      padding: 1rem;
+      border-radius: 50%;
+      box-shadow: 0px 14px 26px rgba(39, 13, 48, 0.25);
+    }
+  }
+
+  .leftArrow {
+    @extend .arrow;
+    left: 0;
+    background: linear-gradient(
+      90.08deg,
+      #ffffff -16.56%,
+      #ffffff -16.54%,
+      rgba(252, 248, 253, 0) 100.07%
+    );
+  }
+
+  .rightArrow {
+    @extend .arrow;
+    right: 0px;
+    background: linear-gradient(
+      90deg,
+      #ffffff -16.67%,
+      #ffffff -16.65%,
+      rgba(252, 248, 253, 0) 100.54%
+    );
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    .arrowButton {
+      background-color: gold;
+      color: white;
+    }
+  }
+}
