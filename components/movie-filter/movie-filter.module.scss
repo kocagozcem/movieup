@@ -1,0 +1,168 @@
+.container {
+  position: relative;
+  display: flex;
+  width: auto;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  left: 15vw;
+  right: 15vw;
+  top: -3.875rem;
+  box-shadow: 0px 16px 28px rgba(141, 40, 173, 0.15);
+
+  .col {
+    display: flex;
+  }
+
+  .selects {
+    @extend .col;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 16.25rem;
+    margin-right: 1rem;
+  }
+
+  .inputAndButton {
+    @extend .col;
+    flex: 1;
+    min-width: 28.45rem;
+  }
+
+  select {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    padding: 1.25rem;
+    background-color: #f3f3f3;
+    border-radius: 0.5rem;
+    border-top: none;
+    &:nth-child(1) {
+      margin-right: 0.5rem;
+    }
+    &:nth-child(2) {
+      margin-left: 0.5rem;
+    }
+  }
+
+  input {
+    display: flex;
+    flex: 1;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    padding: 1.25rem;
+    background-color: #f3f3f3;
+    border-radius: 0.5rem;
+    margin-right: 1.25rem;
+  }
+
+  button {
+    background-color: gold;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border: 0;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin-right: 1.25rem;
+    border-top: none;
+
+    .buttonText {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    top: -6rem;
+    .selects {
+      flex: 1;
+      margin-bottom: 1rem;
+      select {
+        flex: 1;
+      }
+    }
+
+    .buttonText {
+      margin-top: 0.5rem;
+    }
+    button {
+      margin-right: 0.2rem;
+      .buttonText {
+        margin-right: 0;
+        // display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    left: 3vw;
+    right: 3vw;
+    top: -9.25rem;
+
+    .selects {
+      flex: 1;
+      margin-bottom: 1rem;
+      select {
+        flex: 1;
+      }
+    }
+
+    .buttonText {
+      margin-top: 0.5rem;
+    }
+    button .buttonText {
+      margin-right: 0;
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .container {
+    left: 3vw;
+    right: 3vw;
+    top: -15.25rem;
+
+    .inputAndButton {
+      min-width: unset;
+      flex-wrap: wrap;
+    }
+
+    .selects {
+      flex: 1;
+      margin-bottom: 1rem;
+      select {
+        flex: 1;
+      }
+    }
+    input {
+      margin-right: unset;
+    }
+    .buttonText {
+      margin-top: 0.5rem;
+    }
+    button {
+      display: flex;
+      flex: 1;
+      margin-top: 1rem;
+
+      .buttonText {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container {
+    top: -17rem;
+  }
+}
