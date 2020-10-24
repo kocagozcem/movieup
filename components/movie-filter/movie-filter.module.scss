@@ -1,13 +1,12 @@
 .container {
   position: relative;
   display: flex;
-  width: auto;
+  flex: 1;
   flex-wrap: wrap;
   background-color: white;
   border-radius: 10px;
   padding: 2rem 1.5rem;
-  left: 15vw;
-  right: 15vw;
+  margin: 0 15vw;
   top: -3.875rem;
   box-shadow: 0px 16px 28px rgba(141, 40, 173, 0.15);
 
@@ -103,8 +102,7 @@
 
 @media only screen and (max-width: 700px) {
   .container {
-    left: 3vw;
-    right: 3vw;
+    margin: 0 3vw;
     top: -9.25rem;
 
     .selects {
@@ -127,8 +125,7 @@
 
 @media only screen and (max-width: 435px) {
   .container {
-    left: 3vw;
-    right: 3vw;
+    margin: 0 3vw;
     top: -15.25rem;
 
     .inputAndButton {
