@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  min-width: 14.375rem;
+  background-color: gold;
+  color: white;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font: 400 1rem "Poppins";
+  .icon {
+    margin-right: 0.5rem;
+  }
+}
+
+.containerActive {
+  @extend .container;
+  background-color: white;
+  color: gold;
+}
