@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  max-width: 58.875rem;
+
+  .imageContainer {
+    padding: 2.75rem 3.125rem;
+  }
+
+  .informationsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.75rem 1.375rem 2.75rem 0.75rem;
+    .details {
+      display: flex;
+      align-self: stretch;
+      justify-content: space-between;
+
+      .imdbContainer {
+        display: flex;
+      }
+
+      .genreContainer {
+        display: flex;
+        align-self: stretch;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
