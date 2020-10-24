@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  .image {
+    margin-right: 1.1875rem;
+  }
+
+  .score {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
