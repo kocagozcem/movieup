@@ -2,7 +2,7 @@ const apiKey = "c7b766bd"; // api key to use omdbapi
 
 // get request link
 const getDataUrl = (searchParams) => {
-  const url = `http://www.omdbapi.com/?apiKey=${apiKey}&${searchParams}&type=movie`;
+  const url = `https://www.omdbapi.com/?apiKey=${apiKey}&${searchParams}&type=movie`;
   return url;
 };
 
