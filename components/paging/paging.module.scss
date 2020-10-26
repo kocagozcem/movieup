@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-self: stretch;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .content {
+    display: flex;
+
+    .pageButton {
+      display: flex;
+      border-radius: 10px;
+      padding: 0.8125rem 1.375rem;
+      background-color: rgba(245, 197, 24, 0.2);
+      margin: 0 0.5rem;
+      cursor: pointer;
+      span {
+        color: #f5c518;
+        font-weight: 700;
+      }
+    }
+
+    .active {
+      @extend .pageButton;
+      background-color: #f5c518;
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
