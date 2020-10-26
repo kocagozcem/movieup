@@ -8,6 +8,7 @@ export default function Header() {
   const [pageWidth, setPageWidth] = React.useState();
   const handleResize = () => setPageWidth(window.innerWidth);
 
+  // get window width to hide on smaller screens (TODO: expandable menu is missed)
   React.useEffect(() => {
     setPageWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -20,8 +21,9 @@ export default function Header() {
         <Logo />
         {pageWidth > 922 ? (
           <div className={styles.navigationLinks}>
-            <HeaderItem headline="Home" />
-            <HeaderItem headline="Favorite" color="gold" />
+            <HeaderItem headline="Home" href="/" />
+
+            <HeaderItem headline="Favorite" color="gold" href="/favorites" />
           </div>
         ) : null}
       </div>
