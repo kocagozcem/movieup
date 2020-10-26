@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-self: stretch;
+  padding: 1.5rem 15vw;
+  background: linear-gradient(
+    90deg,
+    rgba(245, 197, 24, 0.26) 22.24%,
+    rgba(251, 247, 252, 0) 100%
+  );
+
+  .crumbs {
+    font-size: 1.125rem;
+    font-weight: 600;
+    .root {
+      color: gold;
+    }
+  }
+}
