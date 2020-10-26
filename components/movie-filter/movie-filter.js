@@ -2,9 +2,13 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./movie-filter.module.scss";
 
-export default function MovieFilter() {
+export default function MovieFilter({ onHero = false }) {
+  // TODO: Filter not completed
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={!onHero ? { top: "unset", marginTop: "2rem" } : {}}
+    >
       <div className={styles.selects}>
         <select name="year" id="year">
           <option hidden>Year</option>

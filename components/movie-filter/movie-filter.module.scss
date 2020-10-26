@@ -78,7 +78,6 @@
 
 @media only screen and (max-width: 1200px) {
   .container {
-    top: -6rem;
     .selects {
       flex: 1;
       margin-bottom: 1rem;
@@ -94,7 +93,6 @@
       margin-right: 0.2rem;
       .buttonText {
         margin-right: 0;
-        // display: none;
       }
     }
   }
@@ -103,7 +101,6 @@
 @media only screen and (max-width: 700px) {
   .container {
     margin: 0 3vw;
-    top: -9.25rem;
 
     .selects {
       flex: 1;
@@ -126,7 +123,6 @@
 @media only screen and (max-width: 435px) {
   .container {
     margin: 0 3vw;
-    top: -15.25rem;
 
     .inputAndButton {
       min-width: unset;
@@ -160,6 +156,6 @@
 
 @media only screen and (max-width: 350px) {
   .container {
-    top: -17rem;
+    top: -1rem;
   }
 }
